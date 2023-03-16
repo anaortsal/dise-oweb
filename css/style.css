@@ -1,0 +1,6 @@
+body{
+    background-color: bisque;
+}
+th:hover{
+    background-color: blueviolet;
+}
