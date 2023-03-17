@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validaciones</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <a href="../index.html">REGRESAR A LA PAGINA PRINCIPAL</a>
+    <h1>VALIDACIONES</h1>
+    <fieldset>
+        <form name="formulario" method="post" action="send.php">
+            <label for=""></label>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" title="Es obligatorio digitar su nombre" required pattern="[A-Za-z0-9]{5,40}"><br>
+            
+            <label for="Codigo">Codigo Estudiantil:</label><br>
+            <input type="number" name="codigo" id="codigo" placeholder="Escriba su codigo" title="Es obligatorio digitar su codigo" required><br>
+            
+            <label for="Contraseña">Contraseña:</label><br>
+            <input type="password" name="contraseña" id="contraseña" minlength="8" placeholder="Escriba su contraseña" required><br>
+            
+            <label for="Email">Correo electronico:</label><br>
+            <input type="email" name="email" id="email" placeholder="Escriba su correo electronico" title="Es obligatorio escribir su correo mas utilizado" required><br>
+            
+            <label for="Sexo">Sexo:</label>
+            Masculino<input type="radio"name="sexo" value="M" id="hombre">
+            Femenino<input type="radio"name="sexo" value="F" id="mujer"><br>
+            <label for="">Nivel de estudio:</label><br>
+            <input type="checkbox">Administracion de empresas<br>
+            <input type="checkbox">Derecho<br>
+            <input type="checkbox">Ingenieria mecanica<br>
+            <input type="checkbox">Ingenieria civil<br>
+            <input type="checkbox">Ingenieria de sistemas <br>
+            <input type="checkbox">Zootecnia<br>
+            <input type="checkbox">Contaduria publica<br>
+            <label for="Semestre">Semestre cursado:</label><br>
+            <select name="" id="">
+                <option value=""></option>
+                <option value="">1 semestre</option>
+                <option value="">2 semestre</option>
+                <option value="">3 semestre</option>
+                <option value="">4 semestre</option>
+                <option value="">5 semestre</option>
+                <option value="">6 semestre</option>
+                <option value="">7 semestre</option>
+                <option value="">8 semestre</option>
+                <option value="">9 semestre</option>
+                <option value="">10 semestre</option>
+            </select><br>
+            <label for="fecha">Fecha de nacimiento:</label><br>
+            <input type="date" max="2023-12-31" required><br>
+            <label for="">Archivo:</label><br>
+            <input type="file" required><br>
+            <label for="limpiar">Limpiar</label><br>
+            <input type="reset"><br>
+            <textarea name="" id="" cols="20" rows="5"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </fieldset>
+    
+</body>
+</html>

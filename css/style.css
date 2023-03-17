@@ -14,5 +14,9 @@ th:hover{
 }
 
 body{
-    background-color: rgb(222, 183, 235);
+     background-color: rgb(222, 183, 235);
+}
+
+fieldset{
+    background-color: antiquewhite;
 }
