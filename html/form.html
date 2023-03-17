@@ -7,16 +7,36 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Formulario</h1>
+    <a href="../index.html">Regresar a la pagina principal</a>
+    <h1>FORMULARIO</h1>
     <fieldset>
         <form action="">
-           <label for="">Nombre completo</label>
+           <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombres completos">
+            <br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos completos">
+            <br>
+           <label for="direccion">Direccion</label>
+            <input type="text" name="direccion" id="direccion" title="Es olbligatorio escribir la direccion de su casa">
+            <br>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Numero de celular">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Correo electronico">
+            <br>
+            <label for="">Sexo</label>
+            Masculino:<input type="radio" value="M" name="sexo" id="hombre">
+            Femenino:<input type="radio" value="F" name="sexo" id="mujer">
+            <label for="">Observaciones</label>
             <input type="text">
-           <label for="">Direccion</label>
-            <input type="text">
-           <label for="">observacion</label>
-            <input type="text">
+            <label for="archivo">Archivos</label>
+            <input type="file">
+            <br>
             <button>ENVIAR</button>
+            <br>
+            
         </form>
     </fieldset>
 </body>
