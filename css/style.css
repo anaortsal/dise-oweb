@@ -24,6 +24,7 @@ header::before {
     display: block;
     margin-bottom: 80px;
 }
+
 nav{
     width: 100%;
     height: 80px;
@@ -112,10 +113,6 @@ nav{
     0% { transform: scale(0); }
     100% { transform: scale(1);} 
 }
-#foto_perfil{
-    height:300px ;
-    width: 300px;
-}
 
 .contenido-header a{
     margin: 28px 0 0 0;
@@ -132,3 +129,88 @@ nav{
     text-transform: uppercase;
     box-shadow: 0 8px 32px rosybrown;
 }
+
+/* ##################### FOOTER #############*/
+footer{
+    background: rgb(70, 70, 70);
+    padding: 20px 0;
+    padding-top: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.partFooter{
+    width: 22%;
+    text-align: center;
+}
+
+.partFooter img {
+    width: 60%;
+}
+
+.partFooter h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background-color: bisque;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid bisque;
+}
+
+.contact {
+    margin: 10px;
+    display: block;
+    text-align: left;
+    color: #fff;
+}
+
+.contact > i{
+    float: left;
+    margin-right: 10px;
+}
+
+.contact > p{
+    font-weight: 500;
+}
+
+.partFooter > a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.partFooter > a:hover{
+    background-color: bisque;
+    transition: all ease-in-out .6s;
+}
+
+.social-media > a > i{
+    color: #fff;
+    display: inline-block;
+    font-size: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    margin-right: 8px;
+    margin-top: 20px;
+
+}
+
+.social-media > a > i:hover{
+    background-color: bisque;
+}
+
